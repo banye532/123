@@ -44,7 +44,6 @@ html,body{
 .menu-link:hover{
   background:rgba(0,150,255,0.1);color:#00ccff;border-color:rgba(0,150,255,0.4);
 }
-
 .page{
   display:none;
 }
@@ -56,9 +55,8 @@ html,body{
   from{opacity:0;}
   to{opacity:1;}
 }
-
 .page-wrap{
-  padding-top:70px;padding-bottom:50px;max-width:500px;margin:0 auto;
+  padding-top:70px;padding-bottom:80px;max-width:500px;margin:0 auto;
 }
 .card{
   background:rgba(12,17,34,0.7);backdrop-filter:blur(6px);border:1px solid rgba(0,150,255,0.15);border-radius:16px;padding:24px;margin:16px 12px;
@@ -70,21 +68,26 @@ html,body{
   position:absolute;width:1px;background:linear-gradient(to bottom,transparent,#0099ff,transparent);animation:fall 10s linear infinite;
 }
 @keyframes fall{0%{top:-100%;opacity:0}10%{opacity:0.6}90%{opacity:0.6}100%{top:100%;opacity:0}}
+.afd-link{
+  text-align:center;
+  margin:30px 12px 10px;
+  padding:12px;
+  background:rgba(12,17,34,0.6);
+  border:1px solid rgba(0,150,255,0.2);
+  border-radius:12px;
+  font-size:14px;
+}
 </style>
 </head>
 <body>
-
 <div class="loader" id="loader">
   <div class="bar"></div><div class="bar" style="animation-delay:-0.4s"></div><div class="bar" style="animation-delay:-0.8s"></div>
 </div>
-
 <div class="bg-lines" id="bgLines"></div>
-
 <div class="head-bar">
   <div><span id="time">--:--:--</span> &nbsp; <span id="date">--/--</span></div>
   <div id="weather">多云</div>
 </div>
-
 <button class="menu-btn" id="menuBtn"><i class="fa fa-bars"></i></button>
 <div class="menu" id="menu">
   <a href="#home" class="menu-link">首页</a>
@@ -93,7 +96,6 @@ html,body{
   <a href="#business" class="menu-link">业务范围</a>
   <a href="#contact" class="menu-link">联系我们</a>
 </div>
-
 <div class="page-wrap">
   <div id="home" class="page active text-center">
     <h1 class="text-4xl font-bold mt-6 mb-4 primary">rebirth</h1>
@@ -105,17 +107,19 @@ html,body{
         副业：电竞娱乐、游戏日常自媒体记录
       </p>
     </div>
+    <div class="afd-link">
+      <a href="https://www.ifdian.net/a/banye-114514" target="_blank" class="primary underline">支持我们 → 爱发电</a>
+    </div>
   </div>
 
   <div id="about" class="page text-center">
     <h2 class="text-3xl font-bold mt-6 mb-6 primary">工作室介绍</h2>
     <div class="card">
-      <p class="text-gray-300 leading-relaxed mb-4">
-        rebirth 工作室，专注优质原创内容创作。
-      </p>
-      <p class="text-gray-400 leading-relaxed">
-        我们深耕漫画剧情设计、专业有声书配音制作，同时在业余时间享受电竞游戏、记录真实游戏日常，用热爱产出每一份作品。
-      </p>
+      <p class="text-gray-300 leading-relaxed mb-4">rebirth 工作室，专注优质原创内容创作。</p>
+      <p class="text-gray-400 leading-relaxed">我们深耕漫画剧情设计、专业有声书配音制作，同时在业余时间享受电竞游戏、记录真实游戏日常，用热爱产出每一份作品。</p>
+    </div>
+    <div class="afd-link">
+      <a href="https://www.ifdian.net/a/banye-114514" target="_blank" class="primary underline">支持我们 → 爱发电</a>
     </div>
   </div>
 
@@ -135,6 +139,14 @@ html,body{
       <h3 class="text-lg font-semibold primary">ban ye半夜</h3>
       <p class="text-gray-400 text-sm my-2">运营管理 / 小店负责 / 技术支持 / 配音</p>
       <a href="https://b23.tv/fi05x3E" target="_blank" class="text-xs primary underline">B站主页</a>
+    </div>
+    <div class="card">
+      <h3 class="text-lg font-semibold secondary">蒽栀子的勾勾果</h3>
+      <p class="text-gray-400 text-sm my-2">绘画 / 配音</p>
+      <a href="https://b23.tv/d6WuOvG" target="_blank" class="text-xs secondary underline">B站主页</a>
+    </div>
+    <div class="afd-link">
+      <a href="https://www.ifdian.net/a/banye-114514" target="_blank" class="primary underline">支持我们 → 爱发电</a>
     </div>
   </div>
 
@@ -156,6 +168,9 @@ html,body{
       <h3 class="text-lg font-semibold secondary">游戏记录自媒体</h3>
       <p class="text-gray-400 mt-2">日常游戏过程记录、生活向内容分享</p>
     </div>
+    <div class="afd-link">
+      <a href="https://www.ifdian.net/a/banye-114514" target="_blank" class="primary underline">支持我们 → 爱发电</a>
+    </div>
   </div>
 
   <div id="contact" class="page text-center">
@@ -163,7 +178,11 @@ html,body{
     <div class="card">
       <p class="text-gray-300 my-3">QQ：1647728712</p>
       <p class="text-gray-300 my-3">邮箱：qqq123456131949@outlook.com</p>
+      <p class="text-gray-300 my-3">爱发电：<a href="https://www.ifdian.net/a/banye-114514" target="_blank" class="primary underline">点击进入</a></p>
       <p class="text-gray-400 mt-6">商务合作、内容交流欢迎联系</p>
+    </div>
+    <div class="afd-link">
+      <a href="https://www.ifdian.net/a/banye-114514" target="_blank" class="primary underline">支持我们 → 爱发电</a>
     </div>
   </div>
 </div>
@@ -172,7 +191,6 @@ html,body{
 window.addEventListener('load',()=>{
   setTimeout(()=>{loader.style.opacity='0';setTimeout(()=>loader.remove(),600);},1200);
 })
-
 function updateTime(){
   const d=new Date();
   const h=String(d.getHours()).padStart(2,'0');
@@ -182,7 +200,6 @@ function updateTime(){
   date.textContent=`${d.getMonth()+1}/${d.getDate()}`;
 }
 setInterval(updateTime,1000);updateTime();
-
 function createBgLines(){
   for(let i=0;i<18;i++){
     const l=document.createElement('div');
@@ -194,9 +211,7 @@ function createBgLines(){
   }
 }
 createBgLines();
-
 menuBtn.onclick=()=>menu.classList.toggle('active');
-
 document.querySelectorAll('.menu-link').forEach(link=>{
   link.onclick=function(e){
     e.preventDefault();
